@@ -2,7 +2,7 @@ x = input("Podaj liczbe: ")
 disp(x)
 i=2
 is=1
-while(i*i<x)
+while(i*i<=x)
     if(modulo(x,i)==0) then
         disp("Nie jest pierwsza")
         is=0
