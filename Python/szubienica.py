@@ -4,7 +4,7 @@ szubi = ["------\n|     |\n|\n|\n|\n|", "------\n|     |\n|     |\n|\n|\n|", "--
 slownik = ["KLAWIATURA", "MYSZ", "EKRAN", "PROGRAM", "WISI", "LITERA", "GRA"]
 wykorzystane=[]
 sukces = 0
-slowo = random.choice(slownik)
+slowo = random.choice(list(open('slowa.txt')))
 temp=""
 przegranalvl=0
 print(slowo)
