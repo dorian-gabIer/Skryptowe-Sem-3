@@ -136,9 +136,9 @@ def zaladuj():
             elif counter == 2:
                 nazwa = str(line)
             elif counter == 3:
-                cena = str(line)
+                cena = float(line)
             elif counter == 4:
-                sztuki = str(line)
+                sztuki = int(line)
             elif counter == 5:
                 magazyn.append(Produkt(id=id, nazwa=nazwa, cena=cena, sztuki=sztuki))
                 id = int(line)
@@ -148,6 +148,7 @@ def zaladuj():
         print("Nie istnieje zapisany plik magazynu. Aby zaladowac magazyn musisz go najpierw wyeksportowac")
     if file_exists:
         print("Zaladowano magazyn")
+        file.close()
 
 while(1):
     wybor = int(input("Wybierz jedna z opcji wpisujac cyfre: \n1 - Dodawanie produktu\n2 - Wyswietlanie wszystkich produktow\n3 - Usuwanie produktu\n4 - Aktualizacja ilosci produktu\n5 - Sprzedaz produktu\n6 - Wyeksportuj magazyn do pliku\n7 - Zaladuj magazyn z pliku\nWybor: "))
